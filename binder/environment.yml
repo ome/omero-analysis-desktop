@@ -1,7 +1,8 @@
 name: napari
 channels:
   - conda-forge
-  - manics
+  - ome
+  - idr
 dependencies:
   - python=3.6
   - pip
@@ -25,6 +26,7 @@ dependencies:
   - pyside2
   - wrapt
   - numpydoc
+  - idr-py
   - pip:
     # Recent jupyter-server-proxy to load vnc_lite.html instead of /
     # https://github.com/jupyterhub/jupyter-server-proxy/pull/151
