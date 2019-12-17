@@ -3,6 +3,7 @@ channels:
   - conda-forge
   - ome
   - manics
+channel_priority: false
 dependencies:
   - omero-py>=5.6.dev9
   - python=3.6
@@ -26,7 +27,6 @@ dependencies:
   - pyside2
   - wrapt
   - numpydoc
-
   - pip:
     # Recent jupyter-server-proxy to load vnc_lite.html instead of /
     # https://github.com/jupyterhub/jupyter-server-proxy/pull/151
