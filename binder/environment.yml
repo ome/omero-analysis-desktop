@@ -4,7 +4,8 @@ channels:
   - ome
   - manics
 dependencies:
-  - omero-py>=5.6.dev9
+  - zeroc-ice36-python
+  - omero-py
   - python=3.6
   - pip
   - websockify=0.9.0
