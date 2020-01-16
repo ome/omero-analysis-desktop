@@ -1,3 +1,4 @@
+bsdtar
 curl
 dbus-x11
 firefox
