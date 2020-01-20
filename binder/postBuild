@@ -34,9 +34,6 @@ chmod +x xstartup
 OMERO_INSIGHT_VERSION=5.5.8
 OMERO_INSIGHT_URL_BASE=https://github.com/ome/omero-insight/releases/download/v$OMERO_INSIGHT_VERSION
 
-#wget -q https://downloads.imagej.net/fiji/latest/fiji-linux64.zip
-#unzip -q fiji-linux64.zip
-#rm fiji-linux64.zip
 wget -q https://downloads.imagej.net/fiji/latest/fiji-nojre.zip
 unzip -q fiji-nojre.zip
 rm fiji-nojre.zip
@@ -63,6 +60,11 @@ popd
 ln -s OMERO.insight-$OMERO_INSIGHT_VERSION OMERO.insight
 mkdir Desktop
 mv $ILASTIK_DIR Desktop
+chmod +x Desktop/$ILASTIK_DIR
+
+# Copy the script to the Desktop
+cp -R $REPO_DIR/scripts Desktop
+
 cp $REPO_DIR/jupyter_desktop/share/*.desktop Desktop
 chmod +x Desktop/*.desktop
 
