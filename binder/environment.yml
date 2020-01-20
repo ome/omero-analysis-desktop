@@ -9,9 +9,8 @@ dependencies:
   - python=3.6
   - pip
   - websockify=0.9.0
-  # https://github.com/napari/napari/blob/v0.2.4/requirements/default.txt
+  # https://github.com/napari/napari/blob/v0.2.10/requirements/default.txt
   - dask
-  - zarr
   - fsspec
   - imageio
   - ipykernel
