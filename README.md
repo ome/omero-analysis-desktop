@@ -27,7 +27,7 @@ Open the displayed URL, then go to `/desktop` in the menu option on the right-ha
 You should see a Linux desktop with icons for OMERO.insight and FIJI.
 
 Use omero-napari
-~~~~~~~~~~~~~~~~
+================
 
 Once the desktop is open, open a terminal and activate the conda environment:
 
@@ -48,6 +48,6 @@ omero napari view  --zarr --endpoint_url https://s3.embassy.ebi.ac.uk/ Image:600
 ```
 
 Use napari
-~~~~~~~~~~
+==========
 
 Once the desktop is open go back to the main Jupyter Notebook window, open `napari.ipynb` and execute the cells one at a time. You should see Napari open in the desktop window.
