@@ -6,7 +6,7 @@ Run [OMERO clients](https://www.openmicroscopy.org/omero/downloads/), [Napari](h
 
 This is based on https://github.com/ryanlovett/nbnovnc
 
-Either [run on mybinder.org](https://mybinder.org/v2/gh/jburel/omero-analysis-desktop/master) or build locally with [repo2docker](https://repo2docker.readthedocs.io/):
+Either [run on mybinder.org](https://mybinder.org/v2/gh/ome/omero-analysis-desktop/master) or build locally with [repo2docker](https://repo2docker.readthedocs.io/):
 
 To build locally:
 
