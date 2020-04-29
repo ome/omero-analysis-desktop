@@ -29,22 +29,22 @@ You should see a Linux desktop with icons for OMERO.insight and FIJI.
 Use omero-napari
 ~~~~~~~~~~~~~~~~
 
-Once the desktop is open, open a terminal run:
+Once the desktop is open, open a terminal and activate the conda environment:
 
 ```
-conda init bash
+. /src/conda/bin/activate notebook
 ```
 
-Close the terminal, re-open a terminal and activate the conda environment:
+In the same terminal you can then use the OMERO CLI client ``omero-napari``:
+
+First connect to the server:
+
+```omero login --server wss://idr.openmicroscopy.org/omero-ws --user public --password public```
+
+Open an image:
 
 ```
-conda activate notebook
-```
-
-In the same terminal you can then use the OMERO CLI client ``omero-napari`` for example:
-
-```
-omero napari view --server idr.openmicroscopy.org --user public --password public --zarr --endpoint_url https://s3.embassy.ebi.ac.uk/ Image:6001240
+omero napari view  --zarr --endpoint_url https://s3.embassy.ebi.ac.uk/ Image:6001240
 ```
 
 Use napari
