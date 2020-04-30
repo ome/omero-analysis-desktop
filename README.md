@@ -32,7 +32,7 @@ Use omero-napari
 Once the desktop is open, open a terminal and activate the conda environment:
 
 ```
-. /src/conda/bin/activate notebook
+. /srv/conda/bin/activate notebook
 ```
 
 In the same terminal you can then use the OMERO CLI client ``omero-napari``:
