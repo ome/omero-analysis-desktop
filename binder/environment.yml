@@ -37,4 +37,3 @@ dependencies:
     - cachey
     - napari_plugin_engine
     - ome-zarr
-

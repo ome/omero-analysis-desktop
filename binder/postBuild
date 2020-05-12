@@ -72,4 +72,4 @@ python -c "from pkg_resources import iter_entry_points; print(list(iter_entry_po
 popd
 
 # Napari (dependencies already installed using conda)   
-pip install --no-dependencies napari
+pip install --no-dependencies napari==0.3.0
