@@ -1,8 +1,8 @@
 # Jupyter OMERO/Fiji/Napari Desktop
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ome/omero-analysis-desktop/master?filepath=napari.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ome/omero-analysis-desktop/master?filepath=napari_s3.ipynb)
 
 
-Run [OMERO clients](https://www.openmicroscopy.org/omero/downloads/), [Napari](http://napari.org/) and [omero-napari](https://gitlab.com/openmicroscopy/incubator/omero-napari) in a Linux desktop using Jupyter.
+Run [OMERO clients](https://www.openmicroscopy.org/omero/downloads/), [Napari](http://napari.org/) and [ome-zarr](https://github.com/ome/ome-zarr-py) in a Linux desktop using Jupyter.
 
 This is based on https://github.com/ryanlovett/nbnovnc
 
@@ -26,8 +26,8 @@ repo2docker .
 Open the displayed URL, then go to `/desktop` in the menu option on the right-hand side.
 You should see a Linux desktop with icons for OMERO.insight and FIJI.
 
-Use omero-napari
-================
+Use ome-zarr
+============
 
 Once the desktop is open, open a terminal and activate the conda environment:
 
@@ -35,19 +35,12 @@ Once the desktop is open, open a terminal and activate the conda environment:
 . /srv/conda/bin/activate notebook
 ```
 
-In the same terminal you can then use the OMERO CLI client ``omero-napari``:
+In the same terminal you can then use ``ome-zarr`` to interrogate and download Zarr datasets:
 
-First connect to the server:
-
-```omero login --server wss://idr.openmicroscopy.org/omero-ws --user public --password public```
-
-Open an image:
-
-```
-omero napari view  --zarr --endpoint_url https://s3.embassy.ebi.ac.uk/ Image:6001240
-```
+``ome_zarr info https://s3.embassy.ebi.ac.uk/idr/zarr/v0.1/6001240.zarr/``
+``ome_zarr download https://s3.embassy.ebi.ac.uk/idr/zarr/v0.1/6001240.zarr/``
 
 Use napari
 ==========
 
-Once the desktop is open go back to the main Jupyter Notebook window, open `napari.ipynb` and execute the cells one at a time. You should see Napari open in the desktop window.
+Once the desktop is open go back to the main Jupyter Notebook window, open `napari_s3.ipynb` and execute the cells one at a time. You should see Napari open in the desktop window.
