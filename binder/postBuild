@@ -31,19 +31,12 @@ chmod +x xstartup
 # Desktop applications
 # Fiji and OMERO insight
 
-OMERO_INSIGHT_VERSION=5.5.9
+OMERO_INSIGHT_VERSION=5.5.11
 OMERO_INSIGHT_URL_BASE=https://github.com/ome/omero-insight/releases/download/v$OMERO_INSIGHT_VERSION
 
-wget -q https://downloads.imagej.net/fiji/latest/fiji-nojre.zip
+wget https://downloads.imagej.net/fiji/latest/fiji-nojre.zip
 unzip -q fiji-nojre.zip
 rm fiji-nojre.zip
-
-ILASTIK_VERSION=ilastik-1.3.2post1-Linux.tar.bz2
-ILASTIK_DIR=ilastik
-mkdir $ILASTIK_DIR
-wget -q http://files.ilastik.org/$ILASTIK_VERSION
-bsdtar xjf $ILASTIK_VERSION -C $ILASTIK_DIR --strip-components=1
-rm $ILASTIK_VERSION
 
 
 pushd Fiji.app/plugins
@@ -59,8 +52,6 @@ popd
 
 ln -s OMERO.insight-$OMERO_INSIGHT_VERSION OMERO.insight
 mkdir Desktop
-mv $ILASTIK_DIR Desktop
-chmod +x Desktop/$ILASTIK_DIR
 
 # Copy the script to the Desktop
 cp -R $REPO_DIR/scripts Desktop
@@ -80,5 +71,5 @@ python -c "from pkg_resources import iter_entry_points; print(list(iter_entry_po
 
 popd
 
-# Napari (dependencies already installed using conda)
-pip install --no-dependencies napari==0.2.10
+# Napari (dependencies already installed using conda)   
+pip install --no-dependencies napari==0.3.0

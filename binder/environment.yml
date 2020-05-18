@@ -34,3 +34,6 @@ dependencies:
     # https://github.com/conda-forge/pyside-feedstock/issues/35
     # napari==
     # Manually install in postBuild instead with --no-dependencies
+    - cachey
+    - napari_plugin_engine
+    - ome-zarr
