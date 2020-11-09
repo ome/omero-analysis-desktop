@@ -31,7 +31,7 @@ chmod +x xstartup
 # Desktop applications
 # Fiji and OMERO insight
 
-OMERO_INSIGHT_VERSION=5.5.11
+OMERO_INSIGHT_VERSION=5.5.14
 OMERO_INSIGHT_URL_BASE=https://github.com/ome/omero-insight/releases/download/v$OMERO_INSIGHT_VERSION
 
 wget https://downloads.imagej.net/fiji/latest/fiji-nojre.zip
@@ -72,4 +72,4 @@ python -c "from pkg_resources import iter_entry_points; print(list(iter_entry_po
 popd
 
 # Napari (dependencies already installed using conda)   
-pip install --no-dependencies napari==0.3.0
+pip install --no-dependencies napari
