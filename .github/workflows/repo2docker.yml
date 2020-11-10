@@ -1,5 +1,5 @@
 ---
-name: Build
+name: repo2docker
 
 on: [push, pull_request]
 
