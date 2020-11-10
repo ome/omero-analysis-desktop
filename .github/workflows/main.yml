@@ -1,0 +1,15 @@
+---
+name: Build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - name: repo2docker install
+        run: pip install --upgrade jupyter-repo2docker
+      - name: Build container
+        run: repo2docker --no-run .
