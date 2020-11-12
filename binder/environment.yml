@@ -6,7 +6,6 @@ channels:
 dependencies:
   - zeroc-ice36-python
   - omero-py
-  - python=3.6
   - pip
   - websockify=0.9.0
   # https://github.com/napari/napari/blob/v0.2.10/requirements/default.txt
