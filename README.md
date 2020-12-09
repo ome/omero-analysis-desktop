@@ -1,5 +1,6 @@
 # Jupyter OMERO/Fiji/Napari Desktop
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ome/omero-analysis-desktop/master?filepath=napari_s3.ipynb)
+[![Actions Status](https://github.com/ome/omero-analysis-desktop/workflows/repo2docker/badge.svg)](https://github.com/ome/omero-analysis-desktop/actions)
 
 
 Run [OMERO clients](https://www.openmicroscopy.org/omero/downloads/), [Napari](http://napari.org/) and [ome-zarr](https://github.com/ome/ome-zarr-py) in a Linux desktop using Jupyter.
