@@ -7,29 +7,38 @@ dependencies:
   - omero-py
   - pip
   - websockify
-  # https://github.com/napari/napari/blob/v0.2.10/requirements/default.txt
+  - jupyter-server-proxy
+  # https://github.com/napari/napari/blob/v0.4.7/setup.cfg
+  - appdirs
+  - cachey
   - dask
-  - fsspec
   - imageio
+  - importlib-metadata
+  - jsonschema
   - ipykernel
+  - magicgui
+  - napari-console
+  - napari-svg
+  - numpydoc
   - numpy
+  - Pillow
+  - psutil
+  - PyOpenGL
+  - PyYAML
+  - pydantic
   - qtpy
   - qtconsole
   - scipy
-  - scikit-image
+  - tifffile
+  - typing_extensions
+  - toolz
   - vispy
-  - ipython
-  - backcall
-  - pyopengl
   - pyside2
   - wrapt
-  - numpydoc
-  - jupyter-server-proxy
   - pip:
     # The conda pyside2 package doesn't appear in pip list so napari tries to reinstall it
     # https://github.com/conda-forge/pyside-feedstock/issues/35
     # napari==
     # Manually install in postBuild instead with --no-dependencies
-    - cachey
     - napari_plugin_engine
     - ome-zarr
