@@ -38,8 +38,8 @@ Once the desktop is open, open a terminal and activate the conda environment:
 
 In the same terminal you can then use ``ome-zarr`` to interrogate and download Zarr datasets:
 
-``ome_zarr info https://s3.embassy.ebi.ac.uk/idr/zarr/v0.1/6001240.zarr/``
-``ome_zarr download https://s3.embassy.ebi.ac.uk/idr/zarr/v0.1/6001240.zarr/``
+``ome_zarr info https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.1/6001240.zarr/``
+``ome_zarr download https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.1/6001240.zarr/``
 
 Use napari
 ==========
